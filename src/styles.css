@@ -1,0 +1,41 @@
+.container {
+  max-width: fit-content;
+  font-family: sans-serif;
+}
+.day {
+  text-align: center;
+}
+.weekday {
+  text-align: center;
+}
+.card {
+  padding: 30px;
+  margin-top: 50px;
+}
+.main-image {
+  width: 130px;
+  position: relative;
+  left: -30px;
+}
+p {
+  font-size: smaller;
+}
+.city {
+  width: 138px;
+  height: 48px;
+  position: relative;
+  bottom: -10px;
+  border-width: 1px;
+  border-radius: 7px;
+  text-align: center;
+  border-color: #6c757d;
+  border-style: solid;
+  font-size: 20px;
+}
+.btn-secondary {
+  position: relative;
+  top: -8px;
+}
+.btn-outline-secondary {
+  width: 138px;
+}
