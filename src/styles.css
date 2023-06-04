@@ -39,3 +39,6 @@ p {
 .btn-outline-secondary {
   width: 138px;
 }
+#description {
+  text-transform: capitalize;
+}
