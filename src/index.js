@@ -7,7 +7,6 @@ function citySubmit(event) {
 }
 
 function showTemperature(response) {
-  console.log(response.data);
   let mainCity = document.querySelector("#maincity");
   mainCity.innerHTML = response.data.name;
   let mainTemp = document.querySelector("#main-temp");
@@ -22,6 +21,12 @@ function showTemperature(response) {
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 let form = document.querySelector("#city-form");
